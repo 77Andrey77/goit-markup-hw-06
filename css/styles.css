@@ -469,7 +469,7 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 .footer-soc {
   display: flex;
@@ -535,6 +535,19 @@ img {
 
 .button.foot {
   font-weight: 900;
+  border: 0px;
+}
+.prizuv-forma {
+  display: inline-flex;
+}
+.pole {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 18px;
 }
 .footer-knopka {
   margin-left: 10px;

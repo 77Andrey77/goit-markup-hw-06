@@ -480,12 +480,28 @@
         <!-- призыв подписаться -->
         <section class="prizuv">
           <h3 class="join">Подпишитесь на рассылку</h3>
-          <a href="" class="button link foot"
+          <form class="prizuv-forma" action="" method="post">
+            <label>
+              <input
+                class="pole"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="button foot" type="submit">
+              Подписаться
+              <svg class="footer-knopka" width="24" , height="24">
+                <use href="./image/symbol-defs1.svg#footer-knopka"></use>
+              </svg>
+            </button>
+          </form>
+          <!-- <a href="" class="button link foot"
             >Подписаться
             <svg class="footer-knopka" width="24" , height="24">
               <use href="./image/symbol-defs1.svg#footer-knopka"></use>
             </svg>
-          </a>
+          </a> -->
         </section>
       </div>
       <p class="finish">2020 | Developed by GoIT Students</p>
