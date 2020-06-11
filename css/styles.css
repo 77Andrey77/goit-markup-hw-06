@@ -58,7 +58,10 @@ img {
   padding-right: 15px;
 }
 .page-header {
+  /* position: fixed; */
+  /* width: 100%; */
   border-bottom: 1px solid #ececec;
+  /* background-color: greenyellow; */
 }
 .header-nav {
   display: flex;
@@ -114,7 +117,7 @@ img {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-/* подсвечивает когда на этой странице находится */
+/* _______подсвечивает когда на этой странице находится_________ */
 .site-nav .carrent {
   position: relative;
   color: var(--accent-color);
@@ -133,7 +136,7 @@ img {
   border-radius: 2px;
 }
 
-/* auth-nav */
+/*_________ auth-nav________________ */
 
 .auth-nav {
   display: flex;
@@ -176,8 +179,8 @@ img {
   margin-right: 10px;
 }
 
-/* стили для index.html */
-/* герой */
+/* _____________________стили для index.html____________________ */
+/* ___________герой_____________ */
 .hero {
   text-align: center;
   max-width: 1600px;
@@ -216,7 +219,7 @@ img {
   display: inline-flex;
 }
 
-/* отличительные характеристики */
+/*________________ отличительные характеристики______________ */
 .section {
   margin-left: auto;
   margin-right: auto;
@@ -267,7 +270,7 @@ img {
   line-height: 1.71;
 }
 
-/* чем мы занимаемся */
+/*_______________ чем мы занимаемся______________ */
 .section .title {
   font-size: 36px;
   line-height: 1.16;
@@ -303,7 +306,7 @@ img {
   padding-top: 27px;
   padding-bottom: 27px;
 }
-/* наша команда */
+/* ______________наша команда_____________ */
 
 .social {
   display: flex;
@@ -416,7 +419,7 @@ img {
 .link:focus > .clients-icon {
   fill: var(--accent-color);
 }
-/* подвал */
+/*________________ подвал_________________ */
 .footer {
   background-color: #2f303a;
 }
@@ -523,6 +526,7 @@ img {
 
   color: var(--text-white-color);
   background-color: var(--accent-color);
+  border: 0px;
 
   font-weight: 700;
   font-size: 16px;
@@ -531,11 +535,12 @@ img {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .button.foot {
   font-weight: 900;
-  border: 0px;
+  /* border: 0px; */
 }
 .prizuv-forma {
   display: inline-flex;
@@ -543,7 +548,6 @@ img {
 .pole {
   width: 358px;
   height: 50px;
-  margin-right: 12px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -552,6 +556,110 @@ img {
 .footer-knopka {
   margin-left: 10px;
   fill: var(--white-color-icon-svg);
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  min-height: 581px;
+  width: 528px;
+  background: #ffffff;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+
+  margin-bottom: 20px;
+}
+.modal .pole {
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-bottom: 28px;
+  box-shadow: none;
+
+  min-width: 448px;
+  min-height: 40px;
+}
+.modal-item {
+  display: block;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 30px;
+}
+textarea {
+  resize: none;
+  min-width: 448px;
+  min-height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.modal-form input::placeholder {
+  color: var(--title-text-color);
+}
+.modal-form textarea::placeholder {
+  color: var(--title-text-color);
+}
+.contract {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal .button {
+  display: inline-block;
+  margin-top: 30px;
+}
+.modal-close {
+  position: absolute;
+
+  right: -15px;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 /*____________стили для portfolio.html ______________*/
