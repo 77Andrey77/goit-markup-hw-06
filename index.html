@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Студия</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -555,22 +555,31 @@
             </svg>
           </div>
 
-          <label>
+          <div class="form-filed">
             <textarea
+              class="form-texter"
               name="comment"
               id="comment"
               cols="30"
               rows="10"
-              placeholder="Коментарий"
+              placeholder=" "
             ></textarea>
-          </label>
+
+            <label for="comment" class="form-label-texter">Комментарий</label>
+          </div>
         </form>
 
-        <input type="checkbox" name="contract" value="contract" id="contract" />
-        <label class="contract" for="contract"
-          >Соглашаюсь с рассылкой и принимаю
-          <a href="">Условия договора</a></label
-        >
+        <label class="contract">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="contract"
+            value="contract"
+          />
+          <samp class="contract-icon"></samp>
+          Соглашаюсь с рассылкой и принимаю
+          <a href=""> Условия договора</a>
+        </label>
         <button type="submit" class="button">Отправить</button>
 
         <button class="modal-close" data-modal-close>
