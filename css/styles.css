@@ -558,7 +558,7 @@ img {
   margin-left: 10px;
   fill: var(--white-color-icon-svg);
 }
-
+/*  _________________модальное окно_____________- */
 .backdrop {
   position: fixed;
   width: 100%;
@@ -566,7 +566,6 @@ img {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
-
   transition: opacity 250ms;
 }
 .backdrop.is-hidden {
