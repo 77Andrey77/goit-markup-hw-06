@@ -550,10 +550,23 @@ img {
   width: 358px;
   height: 50px;
   border-radius: 4px;
+  background-color: transparent;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 12px 18px;
 }
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-knopka {
   margin-left: 10px;
   fill: var(--white-color-icon-svg);
@@ -737,6 +750,9 @@ textarea {
   border: 2px solid #212121;
   border-radius: 4px;
   margin-right: 8px;
+}
+.contrtract-link {
+  color: var(--accent-color);
 }
 .checkbox:checked + .contract-icon {
   border-color: transparent;

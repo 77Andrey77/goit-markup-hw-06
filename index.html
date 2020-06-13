@@ -39,7 +39,7 @@
         <ul class="auth-nav list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
-              <svg class="auth-nav-icon" width="16px" height="11.2px">
+              <svg class="auth-nav-icon" width="16" height="11.2">
                 <use href="./image/symbol-defs1.svg#icon_mail"></use>
               </svg>
               info@devstudio.com
@@ -47,7 +47,7 @@
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="link">
-              <svg class="auth-nav-icon" width="10px" height="14.94px">
+              <svg class="auth-nav-icon" width="10" height="14.94">
                 <use href="./image/symbol-defs1.svg#icon_phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -479,7 +479,7 @@
         <!-- призыв подписаться -->
         <section class="prizuv">
           <h3 class="join">Подпишитесь на рассылку</h3>
-          <form class="prizuv-forma" action="" method="post">
+          <form class="prizuv-forma" action="email" method="post">
             <label>
               <input
                 class="pole"
@@ -497,7 +497,7 @@
           </form>
           <!-- <a href="" class="button link foot"
             >Подписаться
-            <svg class="footer-knopka" width="24" , height="24">
+            <svg class="footer-knopka" width="24"  height="24">
               <use href="./image/symbol-defs1.svg#footer-knopka"></use>
             </svg>
           </a> -->
@@ -508,7 +508,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="modal-item">Оставьте свои данные, мы вам перезвоним</b>
-        <form class="form" action="">
+        <form class="form" action="text">
           <div class="form-filed">
             <input
               type="text"
@@ -564,20 +564,19 @@
 
             <label for="comment" class="form-label-texter">Комментарий</label>
           </div>
+          <label class="contract">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="contract"
+              value="contract"
+            />
+            <samp class="contract-icon"></samp>
+            Соглашаюсь с рассылкой и принимаю &nbsp
+            <a class="contrtract-link" href=""> Условия договора</a>
+          </label>
+          <button type="submit" class="button">Отправить</button>
         </form>
-
-        <label class="contract">
-          <input
-            class="checkbox"
-            type="checkbox"
-            name="contract"
-            value="contract"
-          />
-          <samp class="contract-icon"></samp>
-          Соглашаюсь с рассылкой и принимаю
-          <a href=""> Условия договора</a>
-        </label>
-        <button type="submit" class="button">Отправить</button>
 
         <button class="modal-close" data-modal-close>
           <svg class="" width="11" height="11">
