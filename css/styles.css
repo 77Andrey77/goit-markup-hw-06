@@ -588,7 +588,7 @@ img {
 .modal {
   position: absolute;
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
   /* align-items: center; */
   /* justify-content: center; */
 
@@ -608,6 +608,7 @@ img {
 .form {
   display: flex;
   flex-direction: column;
+  /* text-align: center; */
 
   font-weight: 400px;
   font-size: 14px;
@@ -615,7 +616,7 @@ img {
   letter-spacing: 0.01em;
   color: var(--title-text-color);
 
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .form-filed {
   position: relative;
@@ -761,10 +762,17 @@ textarea {
   background-size: contain;
   background-origin: border-box;
 }
+.but {
+  display: block;
+  text-align: center;
+}
 .modal .button {
   display: inline-block;
+  width: 200px;
+
   margin-top: 30px;
 }
+
 .modal-close {
   position: absolute;
 
